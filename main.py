@@ -16,7 +16,6 @@ def main():
     X = california_housing.data
     y = california_housing.target
 
-    # 数据集分割与统一归一化
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
@@ -36,12 +35,10 @@ def main():
     # print('\n--- Random Forest Regression ---')
     # rf_metrics = run_rf(X_train, X_test, y_train, y_test)  # RF通常不强制归一化
 
-    # 汇总/可视化（可选）
-    # print('\n--- Final Comparison ---')
-    # print('| Model | MSE | RMSE | R2 |')
-    # print('|-------|------|------|----|')
-    # print(f"| SVM   | {svr_metrics['mse']:.4f} | {svr_metrics['rmse']:.4f} | {svr_metrics['r2']:.4f} |")
-    # 可继续添加其它算法输出
+    print('\n--- Final Comparison ---')
+    print('| Model | MSE | RMSE | R2 |')
+    print('|-------|------|------|----|')
+    print(f"| SVM   | {svr_metrics['mse']:.4f} | {svr_metrics['rmse']:.4f} | {svr_metrics['r2']:.4f} |")
 
 if __name__ == "__main__":
     main()

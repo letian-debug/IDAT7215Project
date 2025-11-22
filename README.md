@@ -13,6 +13,17 @@ This project presents a systematic comparison of five machine learning regressio
 | David Wang  | 20214204   | Random Forest   |
 Gao Xiang   | 20214202   | Artificial Neural Network (ANN) |
 
+## How to Run
+
+1. Install requirements:
+    ```
+    pip install -r requirements.txt
+    ```
+2. Run the main script:
+    ```
+    python main.py
+    ```
+3. Outputs, including metrics and charts, will be found in the `results/` directory.
 
 ## Data Source
 
