@@ -1,0 +1,31 @@
+# Group 13: Machine Learning Regression Model Comparison
+
+## Project Overview
+
+This project presents a systematic comparison of five machine learning regression algorithms on the California Housing dataset ([fetch_california_housing from scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html)). Our goal is to analyze each model’s prediction performance and discuss their applicability to real-world housing price estimation.
+
+## Data Source
+
+- **Dataset:** California Housing (scikit-learn builtin)
+- **Features:** 8 numerical features per record
+- **Target:** Median house value (continuous variable)
+
+## Models Evaluated
+
+Each team member selected and implemented one regression algorithm:
+- **K-Nearest Neighbors (KNN)**
+- **Artificial Neural Network (ANN)**
+- **Linear Regression**
+- **Random Forest**
+- **Support Vector Machine (SVM)**
+
+## Workflow
+
+1. **Data Preprocessing:** Clean and normalize the raw California Housing dataset.
+2. **Model Implementation:** Train each algorithm independently using standard Python libraries (scikit-learn, TensorFlow/Keras as needed).
+3. **Evaluation:** Use metrics such as MAE, RMSE, and R² to compare prediction performance.
+4. **Result Visualization:** Summarize findings with charts and tables.
+
+## Reproducibility
+
+1. Install requirements with  
