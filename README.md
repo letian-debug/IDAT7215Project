@@ -46,7 +46,3 @@ Each team member selected and implemented one regression algorithm:
 2. **Model Implementation:** Train each algorithm independently using standard Python libraries (scikit-learn, TensorFlow/Keras as needed).
 3. **Evaluation:** Use metrics such as MAE, RMSE, and R² to compare prediction performance.
 4. **Result Visualization:** Summarize findings with charts and tables.
-
-## Reproducibility
-
-1. Install requirements with  
