@@ -8,7 +8,7 @@ from models.svm_regression import run_svr
 from models.knn_regression import run_knn
 # from models.ann_regression import run_ann
 # from models.linear_regression import run_linear
-# from models.rf_regression import run_rf
+from models.rf_regression import run_rf
 
 def main():
     print('--- Loading Data ---')
@@ -32,14 +32,15 @@ def main():
     # ann_metrics = run_ann(X_train_scaled, X_test_scaled, y_train, y_test)
     # print('\n--- Linear Regression ---')
     # linear_metrics = run_linear(X_train_scaled, X_test_scaled, y_train, y_test)
-    # print('\n--- Random Forest Regression ---')
-    # rf_metrics = run_rf(X_train, X_test, y_train, y_test)  # RF通常不强制归一化
+    print('\n--- Random Forest Regression ---')
+    rf_metrics = run_rf(X_train, X_test, y_train, y_test)  # RF通常不强制归一化
 
     print('\n--- Final Comparison ---')
     print('| Model | MSE | RMSE | R2 |')
     print('|-------|------|------|----|')
     print(f"| SVM   | {svr_metrics['mse']:.4f} | {svr_metrics['rmse']:.4f} | {svr_metrics['r2']:.4f} |")
     print(f"| KNN   | {knn_metrics['mse']:.4f} | {knn_metrics['rmse']:.4f} | {knn_metrics['r2']:.4f} |")
+    print(f"|  RF   | {rf_metrics['mse']:.4f} | {rf_metrics['rmse']:.4f} | {rf_metrics['r2']:.4f} |")
 
 
 if __name__ == "__main__":
